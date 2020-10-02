@@ -1,2 +1,2 @@
-# algorithm.github.io
-algorithm
+# ar-bella-jeong.github.io
+- algorithm
