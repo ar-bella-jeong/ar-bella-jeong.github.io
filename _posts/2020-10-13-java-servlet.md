@@ -1,5 +1,5 @@
 ---
-title: "Java"
+title: "Servlet"
 date: 2020-10-13 18:39:28 -0400
 categories: java
 tags:
