@@ -17,6 +17,7 @@ tags:
 >- N명의 사람이 M개의 게임을 하는데 걸리는 시간이 H(i)
 >- 모든 사람이 게임을 완료하는데 걸리는 시간 = **O(max(H(i))**
 >> 미리 계산해보고 timeout이 되지 않을 것 같을 때 구현하는 것이 Good!
+
 #### 1s의 input size
 - O(1)
 - O(logN)
@@ -28,6 +29,7 @@ tags:
 - O(N!) : 10
 >  **Note:** 이를 통해 문제에서 요구하는 Algorithm의 Time Complexity을 유추할 수 있음.
 > >실제로는 이보다 성능이 더 좋게 나옴!
+
 #### 계산
 - Big O Notation에서 상수는 버린다
 > O(3N^2) = O(N^2)
@@ -36,6 +38,7 @@ tags:
 > O(N^2 + NlogN) = O(N^2)
 - 변수가 다르면 놔둔다
 > O(N^2 + M)
+
 ## Memory
 ### 사용한 메모리
 - 보통 가장 많은 공간을 사용하는 것은 배열
@@ -52,6 +55,7 @@ tags:
 >> cout.tie(nulltpr); // 사용 안해도 충분(cin untie시 기본적으로 cout은 buffer가 가득차거나 수동적으로 flush를 시켜주기 전까지 출력 X)
 >> ```
 >> 이 경우에는 cin/cout와 scanf/printf를 섞어 쓰면 안된다. (C, C++ 입출력 순서 보장 X)
+
 ## Example
 ### 1. A+B-4
 https://www.acmicpc.net/problem/10950
