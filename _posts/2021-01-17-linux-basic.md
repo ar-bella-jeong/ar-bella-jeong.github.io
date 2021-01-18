@@ -20,6 +20,7 @@ tags:
 ![Demystifiying The Linux Kernel – Digilent Blog](https://blog.digilentinc.com/wp-content/uploads/2015/05/1280px-Kernel_Layout.svg_.png)
 
 ### Linux 주요 Directory
+ 
  directory | description
   ---|:---:
   bin | 기본 명령어들이 저장 된 디렉토리
@@ -44,14 +45,17 @@ proc|실행중인 process및 kernel 정보가 저장되는 곳, disk상이 아�
 #### Clear
 화면 clear
 #### ls
+
 option| description
   ---|:---:
   -F|directory는 /, 실행가능 file은 *, socket file은 =, link인 경우 @를 file 뒤에 표시
  -l | 각 항목의 상세 정보들을 함께 표시
+  
   > option을 합성하는 것도 가능
   > ```shell
   > ls -lF
   > ```
+
 #### wget
 w(Web)get : web에서 download 한다.
 
