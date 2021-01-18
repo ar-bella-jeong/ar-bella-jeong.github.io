@@ -1,3 +1,12 @@
+---
+title: "Linux Basic"
+date: 2021-01-17 19:22:28 -0400
+categories: linux
+tags:
+  - linux
+  - wsl
+---
+
 ## Linux
 - 리눅스 토발즈의 linux 로 부터 많은 linux os들이 파생
 
