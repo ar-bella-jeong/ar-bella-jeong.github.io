@@ -18,6 +18,7 @@ Fortunately, **Spring supports bootstrapping the SessionFactory**.
 ## Configuration
 As mentioned before, Spring supports us with bootstrapping the Hibernate *SessionFactory*.
 All we have to do is to **define some beans as well as a few parameters.**
+
 ```java
 @Configuration
 @EnableTransactionManagerment
@@ -59,6 +60,7 @@ public class HibernateConf {
 	}
 }
 ```
+
 > Dialect?
 > A database driver is a program for which implements a protocol (ODBC, JDBC) for connecting to a database. It is an Adaptor which  connects a generic interface to a specific vendors implementation, just like printer drivers etc.
 > A database dialect is a configuration setting for platform independent software (JPA, Hibernate, etc) which allows such software to translate its generic SQL statements into verdor specific DDL, DML.
