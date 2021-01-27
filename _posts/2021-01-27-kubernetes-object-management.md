@@ -19,11 +19,13 @@ Management technique | Operates on | Recommended environment
 ## Imperative Commands
 #### 장점
 - cluster에 특정 object를 한번에 실행하거나 시작할 수 있는 가장 쉬운 방법이다. (실제 이미지를 바로 실행 함)
+
 #### 단점
 - 기존 설정에 대한 history 제공을 하지 않음.(그래서 권장 환경이 Development)
 - 변경사항이나 audit 내역, template등을 제공하지 않음.
 
-> audit?
+> **audit?**
+>
 > Kubernetes API 서버에서 cluster backend에 대한 감사(audit) log이다. Admin의 Activity log나 data access log들을 수집한다.
 
 ex)
@@ -76,22 +78,22 @@ ex) sample_deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-	name: nginx-deployment
+  name: nginx-deployment
 spec:
-	selector:
-		matchLabels:
-			app: nginx
-	minReadySeconds: 5
-	template:
-		metadata:
-			 labels:
-				 app: nginx
-		spec:
-			containers:
-			- name: nginx
-			  image: nginx:1.7.9
-			  ports:
-			  - containerPort: 80
+  selector:
+    matchLabels:
+      app: nginx
+    minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
 ```
 
 ```bash
@@ -104,11 +106,11 @@ kubectl get -f sample_deployment.yaml -o yaml
 ```yaml
 kind: Deployment
 metadata:
-	annotaions:
-		# This is the json representation
-		kubectl.kubernetes.io/last-applied-configuration: |
-			{"apiVersion":"apps/v1"
-		...
+  annotaions:
+  # This is the json representation
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"apps/v1"
+       ...
 ```
 
 **kubectl.kubernetes.io/last-applied-configuration** 어노테이션에 보면 **sample_deployment.yaml**에 적용한 내용들이 나와있다.
