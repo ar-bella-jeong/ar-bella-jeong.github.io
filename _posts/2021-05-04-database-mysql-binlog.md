@@ -15,7 +15,9 @@ binary log는 일련의 binary log file 집합과 index file로 구성된다.
 CREATE, ALTER, INSERT, UPDATE 및 DELETE와 같은 statement는 기록되지만, SELECT 및 SHOW와 같이 data에 영향을 미치지 않는 statement는 기록되지 않는다. (성능 상 비용은 더 들지만) 이를 기록하려면 [general query log](https://mariadb.com/kb/en/general-query-log/)를 사용해야 한다.
 (row-based logging이 아닌 statement-based logging이 default인 경우) 아무런 row를 return 하지 않는 UPDATE or DELETE또한 logging 된다.
 
-<U>**binary log의 목적은 백업 작업을 지원할 뿐만 아니라, 하나 이상의 master에서 하나 이상의 slave server로 data가 전송되어 복제하도록 하기 위한 것**</U>이다,
+<U>binary log의 목적은 백업 및 복구 작업을 지원할 뿐만 아니라, 하나 이상의 master에서 하나 이상의 slave server로 data가 전송되어 복제하도록 하기 위한 것</U>이다.
+아카이브 된 data가 있고 그 뒤에 event를 기록한 binary log가 있으면, 원하는 시점으로 data를 복구할 수 있다.
+
 
 binary log가 활성화 된 Maria DB server는 약간 느리게 실행될 수 있다. binary log는 암호를 포함한 민감한 정보를 포함할 수 있으므로 보호해야한다. 이를 위해 binary log는 일반 text가 아닌 이진으로 저장되므로 일반 편집기로 볼수 없다.  하여 MariaDB에는 bin log을 일반 text로 변환하여 볼 수 있도록 [mysqlbinlog](https://mariadb.com/kb/en/mysqlbinlog/) 가 포함되어 있다.
 
