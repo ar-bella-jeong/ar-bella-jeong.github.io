@@ -1,4 +1,12 @@
-# [DB] Stored Procedure?
+---
+title: " [DB] Stored Procedure?"
+date: 2021-07-04 11:49:28 -0400
+categories: database
+tags:
+  - database
+comments: true
+---
+
 DB 내부에 저장된 일련의 SQL 명령문들을 하나의 함수처럼 실행하기 위한 쿼리의 집합  
   
 ## SP의 장점
