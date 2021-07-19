@@ -18,7 +18,7 @@ join 조건 시 일치 하지 않는 값이 있더라도 표시하게 한다.
 - RIGHT OUTER = RIGHT
 ![](https://t1.daumcdn.net/cfile/tistory/26310B3458340C9F1C)
 
-## CROSS join
+## CROSS join(Cartesian product)
 집합 곱의 개념이다.
 
 A= {a, b, c, d} , B = {1, 2, 3} 일 때
