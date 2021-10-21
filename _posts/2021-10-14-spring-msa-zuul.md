@@ -1,5 +1,5 @@
 ---
-title: "[Spring][MSA] Spring Cloud Hystrix"
+title: "[Spring][MSA] Spring Cloud Zuul"
 date: 2021-10-14 19:08:28 -0400
 categories: spring
 tags:
