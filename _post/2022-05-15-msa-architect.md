@@ -8,7 +8,6 @@ tags:
 comments: true
 published: false
 ---
-# [MSA] 2. 진화적 Architect
 ## 2.1 Architect에 대한 진화적 관점
 Architect가 만들어내는 결과물이 특정 시점을 기준으로 고정되는 일은 없다. 처음부터 완벽한 최종 제품을 만들려하기보다는 추가 학습을 통해 적합한 System이 생성되고 지속해서 성장할 수 있는 Framework를 만드는 데 보탬이 되도록 생각을 전환해야 한다.
 
