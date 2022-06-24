@@ -5,7 +5,6 @@ categories: msa
 tags:
   - msa
 comments: true
-published: false
 ---
 장점을 극대화하고 잠재적인 단점을 회피할 수 있는 마이크로서비스의 경계에 대해 생각해본다.
 ## 3.1 무엇이 좋은 서비스를 만드는가?
